@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.christineberger.android.ohmslawcalculatoreventapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_title"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <Button
+                        android:id="@+id/btn_exit"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_close"
+                        android:padding="4dp"
+                        android:textColor="#1a252f"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="0dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/str_descr"
+                    android:textSize="16sp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:shrinkColumns="*">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        >
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/input_volts"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorDarkOverlay"
+                                android:hint="@string/str_voltage"
+                                android:inputType="numberDecimal"
+                                android:padding="16dp"
+                                android:selectAllOnFocus="false"
+                                android:textColor="@color/colorLightFont"
+                                android:textColorHint="@color/colorLightFont"/>
+
+                            <TextView
+                                android:id="@+id/text_volts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="right|center"
+                                android:padding="16dp"
+                                />
+                        </FrameLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="24dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/input_resistance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:background="@color/colorDarkOverlay"
+                                android:hint="@string/str_resistance"
+                                android:inputType="numberDecimal"
+                                android:padding="16dp"
+                                android:textColor="@color/colorLightFont"
+                                android:textColorHint="@color/colorLightFont"/>
+
+                            <TextView
+                                android:id="@+id/text_resistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="8dp"
+                                android:gravity="right|center"
+                                android:padding="16dp"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/input_current"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/colorDarkOverlay"
+                                android:hint="@string/str_current"
+                                android:inputType="numberDecimal"
+                                android:padding="16dp"
+                                android:textColor="@color/colorLightFont"
+                                android:textColorHint="@color/colorLightFont"/>
+
+                            <TextView
+                                android:id="@+id/text_current"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="right|center"
+                                android:padding="16dp"/>
+                        </FrameLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/btn_help"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".25"
+                            android:drawableRight="@drawable/ic_action_name"
+                            android:padding="4dp"/>
+
+                        <Button
+                            android:id="@+id/btn_clear"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorSecondaryLight"
+                            android:text="@string/str_clear"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <Button
+                            android:id="@+id/btn_calculate"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/str_calculate"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

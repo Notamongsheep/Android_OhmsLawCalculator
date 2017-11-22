@@ -1,0 +1,33 @@
+<resources>
+    <!-- activity_main.xml strings -->
+    <string name="app_name">Ohm\'s Law Calculator (Event App)</string>
+    <string name="str_title">Ohm\'s Law Calculator</string>
+    <string name="str_descr">What is Ohm\'s Law? Ohm\'s Law is the proportional relationship between current, resistance, and voltage. It\'s an important equation that accounts for the fundamental elements of a circuit - the energy source, the load, and the current of electrons that flow through the circuit. Knowing this mathematical equation allows you to analyze circuits for the correct balance of components.</string>
+
+    <string name="str_voltage">Voltage(E)</string>
+    <string name="str_resistance">Resistance(R)</string>
+    <string name="str_current">Current(I)</string>
+    <string name="str_calculate">Calculate!</string>
+    <string name="str_clear">Clear</string>
+
+    <!-- modal.xml strings -->
+    <string name="str_exit_dialog_title">Do you want to exit?</string>
+    <string name="str_exit_app_msg">Your calculation will be lost! Are you sure?</string>
+    <string name="str_no">CANCEL</string>
+    <string name="str_yes">YES</string>
+
+    <!-- MainActivity.java strings -->
+    <string name="str_error_not_enough_values">Two values must be given in order to calculate the third.</string>
+    <string name="str_error_all_values">Ut oh, did you mean to do that? If all three values are given, there\'s no need to calculate! Remove a value or hit \'clear\' and try again.</string>
+    <string name="str_dev_error_values_not_set">One or more values haven\'t been set programmatically!</string>
+    <string name="str_dev_error_double_format">All values must be numeric values!</string>
+    <string name="str_units_volts">Volt(s)</string>
+    <string name="str_units_current">Amp(s)</string>
+    <string name="str_units_resistance">Ohm(s)</string>
+
+    <!-- modal_instr.xml strings -->
+    <string name="str_instr_modal_title">Instructions</string>
+    <string name="str_instr_modal_content"><b>Clear</b> all the values to do a new calculation.\n\nThe <u>blue</u> text can be changed to <b>recalculate the same formula.</b></string>
+    <string name="str_ok">OK</string>
+
+</resources>
